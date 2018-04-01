@@ -5,6 +5,7 @@ import App from './App';
 import router from './router';
 import VueCordova from 'vue-cordova';
 import Vuetify from 'vuetify';
+import store from './store';
 
 Vue.config.productionTip = false;
 
@@ -23,6 +24,7 @@ if (window.location.protocol === 'file:' || window.location.port === '3000') {
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 });
